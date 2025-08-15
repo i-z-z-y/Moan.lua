@@ -446,6 +446,7 @@ function Moan.keyreleased(key)
           if Moan.currentOption == i then
             Moan.allMsgs[Moan.currentMsgInstance].options[i][2]()
             Moan.playSound(Moan.optionSwitchSound)
+            return
           end
         end
       end
